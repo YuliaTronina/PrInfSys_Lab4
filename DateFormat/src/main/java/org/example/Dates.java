@@ -26,10 +26,11 @@ public class Dates {
 
     private static void getDateInternal() {
         try {
-            System.out.println(format.format(new Date()));
+            System.out.println(format.format(format.parse("2024-09-18 19:19:23.000")));
         } catch (Exception ex) {
             System.out.println(String.format("Error: %s", ex.getMessage()));
         }
     }
+
 }
 
